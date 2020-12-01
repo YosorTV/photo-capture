@@ -8,6 +8,7 @@ const FaqQuestion = ({ title, description }) => {
           <p>Lorem ipsum dolor sit amet.</p>
           <p>{description}</p>
         </div>
+        <div className="faq-line"></div>
     </div>
   )
 }

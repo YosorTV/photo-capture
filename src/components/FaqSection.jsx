@@ -1,4 +1,7 @@
 import React from 'react'
+import styled from 'styled-components';
+
+import { About } from '../components/styles';
 import FaqQuestion from './FaqQuestion'
 
 const FaqSection = () => {
@@ -27,7 +30,7 @@ const FaqSection = () => {
   ]
 
   return (
-    <div className="faq">
+    <Faq>
       <h2>Any Questions <span>FAQ</span></h2>
       {questions && questions.map(({id, title, description}) => {
         return (
@@ -38,8 +41,35 @@ const FaqSection = () => {
         />
         )
       })}
-      </div>
+      </Faq>
   )
 }
+
+const Faq = styled(About)`
+  display:block;
+    span {
+      display:block;
+    }
+    h2{
+      padding-bottom: 2rem;
+      font-weight: lighter;
+    }
+    .faq-line{
+      background: #ccc;
+      height:.2rem;
+      margin: 2rem 0rem;
+      width:100%;
+    }
+    .question{
+      padding: 3rem 0rem;
+      cursor: pointer;
+    }
+    .answer{
+      padding: 2rem 0rem;
+      p{
+        padding: 1rem 0rem;
+      }
+    }
+`; 
 
 export default FaqSection

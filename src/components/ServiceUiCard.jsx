@@ -1,14 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Card } from '../components/styles';
 
 const ServiceUiCard = ({icon, title, description}) => {
 return (
-<div className="card">
+<Card>
   <div className="icon">
     <img src={icon} alt="icon"/>
     <h3>{title}</h3>
   </div>
   <p>{description}</p>
-</div>
+</Card>
 )
 }
 
