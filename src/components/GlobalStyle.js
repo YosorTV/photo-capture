@@ -1,8 +1,6 @@
-import {
-  createGlobalStyle
-} from 'styled-components';
+import {createGlobalStyle} from 'styled-components';
 
-const GlobalStyle = createGlobalStyle `
+const GlobalStyle = createGlobalStyle`
 *{
   margin: 0;
   padding: 0;
@@ -14,11 +12,11 @@ body{
   font-family: 'Inter', sans-serif;
   font-weight: 700;
 }
-/* font-family: 'Lobster', cursive; */
+
 button {
+  cursor: pointer;
   font-weight: 400;
   font-size:1.1rem;
-  cursor: pointer;
   padding: 1rem 2rem;
   border:3px solid #23d997;
   background: transparent;
@@ -30,6 +28,7 @@ button {
     color: white;
   }
 }
+
 h2{
   font-weight: lighter;
   font-size: 4rem;
@@ -38,10 +37,12 @@ h2{
 h3{
   color: white;
 }
+
 h4{
   font-weight: bold;
   font-size: 2rem;
 }
+
 span{
   font-weight:bold;
   color:#23d997;
@@ -56,8 +57,6 @@ p{
   color:#ccc;
   font-size: 1.4rem;
   line-height:150%;
-}
-
-`
+}`
 
 export default GlobalStyle;
