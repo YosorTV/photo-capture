@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import MovieService from './movieService';
+import movieService from './movieService';
 
 import GlobalStyle from './components/GlobalStyle';
 
@@ -11,18 +11,11 @@ import OurWork from './pages/OurWork';
 import {Switch, Route} from 'react-router-dom';
 
 function App() {
-  // const [movies, setMovies] = useState([]);
-
-  // const getMovies = async () => {
-  //   const { data } = await movieService.get('/');
-  //     console.log('data: ', data);
-  // }
-
-
-  // getMovie()
-
-  // useEffect(() => getMovie(), [movies])
   
+const getMovies = () => {
+  movieService.get('/').then(({data}) => console.log(data))
+}
+getMovies();
 
   return (
     <div className="App">
