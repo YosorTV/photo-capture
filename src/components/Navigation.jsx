@@ -26,13 +26,12 @@ const Navigation = () => {
   return (
     <Nav>
       <h1>
-        <Link id="logo" to="/" >Capture</Link>
+        <Link id="logo" to="/" >.VFS</Link>
       </h1>
       <ul>
         {navigationList.map(({ id, link, page }) => 
           <NavList 
             key={id} 
-            number={id} 
             name={link}
             page={page}
           />)}

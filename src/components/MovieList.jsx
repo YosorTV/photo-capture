@@ -2,6 +2,18 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+const MovieList = ({ url, movieName, movieImg }) => {
+  return (
+    <Movie>
+    <h2>{movieName}</h2>
+    <div className="line"></div>
+    <Link to={`${url}`}>
+      <img src={movieImg} alt="img"/>
+    </Link>
+  </Movie>
+  )
+}
+// style's
 export const Work = styled.div`
   min-height: 100vh;
   overflow:hidden;
@@ -23,17 +35,5 @@ padding-bottom: 10rem;
     object-fit:cover;
   }
 `
-
-const MovieList = ({ movieName, movieImg }) => {
-  return (
-    <Movie>
-    <h2>{movieName}</h2>
-    <div className="line"></div>
-    <Link>
-      <img src={movieImg} alt="img"/>
-    </Link>
-  </Movie>
-  )
-}
 
 export default MovieList

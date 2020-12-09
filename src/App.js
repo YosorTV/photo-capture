@@ -7,15 +7,19 @@ import Navigation from './components/Navigation';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import OurWork from './pages/OurWork';
+import MovieDetail from './pages/MovieDetail';
 
 import {Switch, Route} from 'react-router-dom';
 
 function App() {
-  
-const getMovies = () => {
-  movieService.get('/').then(({data}) => console.log(data))
+const [movies, setMovies] = useState([]);
+
+const getMovies = async () => {
+  const { data } = await movieService.get('/');
+    setMovies(data);
 }
-getMovies();
+
+useEffect(() => getMovies(), []);
 
   return (
     <div className="App">
@@ -25,8 +29,11 @@ getMovies();
         <Route path="/" exact>
           <AboutUs />
         </Route>
-        <Route path="/work">
-          <OurWork />
+        <Route path="/work" exact>
+          <OurWork movies={movies}/>
+        </Route>
+        <Route path="/work/:id">
+          <MovieDetail movies={movies}/>
         </Route>
         <Route path="/contact">
           <ContactUs />

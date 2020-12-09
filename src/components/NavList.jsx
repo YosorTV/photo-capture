@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const NavList = ({ number, name, page }) => {
+const NavList = ({ name, page }) => {
   return (
     <li>
-      <Link to={page}>{number}. {name}</Link>
+      <Link to={page}>{name}</Link>
     </li>
   )
 }
