@@ -1,31 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+
 // UI 
 import ServiceUiCard from './ServiceUiCard';
-
 //styles
-import { About, Description, Image } from './styles'
-
+import { About, Description, Image, Hide } from './styles';
+import { useScroll } from './useScroll';
+import { motion } from 'framer-motion';
 // images
 import clock from '../img/clock.svg';
 import diaphragm from '../img/diaphragm.svg';
 import money from '../img/money.svg';
 import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.png';
+import { leftReveal, rightReveal } from '../animation';
 
-const Services = styled(About)`
-  h2{
-    padding-bottom: 5rem;
-  }
-  p{
-    width:70%;
-    padding: 2rem 0rem 4rem 0rem
-  }
-`
-const Cards = styled.div`
-  display:flex;
-  flex-wrap: wrap;
-`
 const uiCard = [
   {
     id: Math.random(),
@@ -54,9 +43,15 @@ const uiCard = [
 ]
 
 const ServiceSection = () => {
+  const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
   return (
     <Services>
-      <Description>
+      <Description
+        ref={element}
+        animate={controls}
+        initial="hidden"
+        variants={leftReveal}>
         <h2>High <span>quality</span> services</h2>
         <Cards>
           {uiCard.map(({id, icon, title, description}) => {
@@ -70,11 +65,29 @@ const ServiceSection = () => {
         )})}
         </Cards>
       </Description>
-      <Image>
+      <Image 
+        ref={element2}
+        animate={controls2}
+        initial="hidden"
+        variants={rightReveal}>
         <img src={home2} alt="camera"/>
       </Image>
     </Services>
   )
 }
+
+const Services = styled(About)`
+  h2{
+    padding-bottom: 5rem;
+  }
+  p{
+    width:70%;
+    padding: 2rem 0rem 2rem 0rem
+  }
+`
+const Cards = styled.div`
+  display:flex;
+  flex-wrap: wrap;
+`
 
 export default ServiceSection

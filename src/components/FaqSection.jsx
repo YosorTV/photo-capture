@@ -1,11 +1,14 @@
 import React from 'react'
-import styled from 'styled-components';
 
-import { About } from '../components/styles';
 import FaqQuestion from './FaqQuestion'
 
-const FaqSection = () => {
+import styled from 'styled-components';
+import { bottomReveal } from '../animation';
+import { About, Hide } from '../components/styles';
+import { useScroll } from './useScroll';
 
+const FaqSection = () => {
+  const [element, controls] = useScroll();
   const questions = [
     {
       id:Math.random(),
@@ -30,18 +33,20 @@ const FaqSection = () => {
   ]
 
   return (
-    <Faq>
+    <Hide>
+    <Faq variants={bottomReveal} ref={element} animate={controls} initial="hidden">
       <h2>Any Questions <span>FAQ</span></h2>
       {questions && questions.map(({id, title, description}) => {
         return (
-        <FaqQuestion 
-          key={id}
-          title={title}
-          description={description}
-        />
-        )
-      })}
+          <FaqQuestion
+            key={id}
+            title={title}
+            description={description}
+          />)
+        }
+      )}
       </Faq>
+      </Hide>
   )
 }
 
@@ -51,7 +56,7 @@ const Faq = styled(About)`
       display:block;
     }
     h2{
-      padding-bottom: 2rem;
+      padding-bottom: 9rem;
       font-weight: lighter;
     }
     .faq-line{
@@ -60,15 +65,15 @@ const Faq = styled(About)`
       margin: 2rem 0rem;
       width:100%;
     }
-    .question{
-      padding: 3rem 0rem;
+    h4{
       cursor: pointer;
     }
-    .answer{
-      padding: 2rem 0rem;
-      p{
-        padding: 1rem 0rem;
-      }
+    .question{
+      padding: 3rem 0rem;
+    }
+    .description{
+      padding: 1rem 0rem;
+      cursor: pointer;
     }
 `; 
 

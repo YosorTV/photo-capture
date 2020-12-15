@@ -1,10 +1,17 @@
 import React from 'react'
-
+// Animation
+import {motion} from 'framer-motion';
+import {pageAnimation} from '../animation';
 const CoutactUs = () => {
   return (
-    <div>
-      <h2>CoutactUs</h2>
-    </div>
+    <motion.div
+      variants={pageAnimation} 
+      initial="hidden" 
+      animate="show" 
+      exit="exit"
+    >
+      <h2>Coutact Us</h2>
+    </motion.div>
   )
 }
 

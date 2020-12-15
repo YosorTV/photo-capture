@@ -26,7 +26,7 @@ const Navigation = () => {
   return (
     <Nav>
       <h1>
-        <Link id="logo" to="/" >.VFS</Link>
+        <Link id="logo" to="/" >VFS</Link>
       </h1>
       <ul>
         {navigationList.map(({ id, link, page }) => 
@@ -41,16 +41,22 @@ const Navigation = () => {
 }
 
 const Nav = styled.nav`
-  min-height: 10vh;
+  min-height: 5vh;
   display:flex;
   margin: auto;
   justify-content: space-between;
   align-items:center;
-  padding: 1rem 10rem;
-  background:#282828;
+  padding: .5rem 5rem;
+  border-bottom: 8px solid #881111;
+  
   a{
-    color:white;
+    color:#ffffff;
     text-decoration:none;
+    font-size: 1.4rem;
+    transition: .2s ease-out;
+    &:hover{
+      color:#881111
+    }
   }
   ul{
     display:flex;
@@ -61,9 +67,10 @@ const Nav = styled.nav`
     }
   }
   #logo{
-    font-size: 1.8rem;
-    font-family: 'Lobster', cursive;
-    font-weight: lighter;
+    font-size: 4rem;
+    font-family: 'Big Shoulders Inline Text', cursive;
+    font-weight: 900;
+    color: #e35023;
   }
 `
 

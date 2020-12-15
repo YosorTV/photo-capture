@@ -9,8 +9,9 @@ const GlobalStyle = createGlobalStyle`
 
 body{
   background: #1b1b1b;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  overflow-x: hidden;
 }
 
 button {
@@ -18,13 +19,13 @@ button {
   font-weight: 400;
   font-size:1.1rem;
   padding: 1rem 2rem;
-  border:3px solid #23d997;
+  border:3px solid #e35023;
   background: transparent;
   color: white;
   transition: all .5s ease;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   &:hover{
-    background-color: #23d997;
+    background-color: #e35023;
     color: white;
   }
 }
@@ -45,7 +46,8 @@ h4{
 
 span{
   font-weight:bold;
-  color:#23d997;
+  color:#e35023;
+  font-family: 'Big Shoulders Inline Text', cursive;
 }
 
 a{

@@ -1,29 +1,46 @@
 import React from 'react'
-import home1 from '../img/home1.png';
-
+import home1 from '../img/home1.jpg';
 import { About, Description, Image, Hide } from './styles';
 
+import {motion} from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { fade, photoAnim, titleAnimation } from '../animation';
+import Wave from './Wave';
+
 const AboutSection = () => {
+
 return (
 <About>
   <Description>
-    <div className="title">
+    <motion.div className="title">
       <Hide>
-        <h2>We Work To Make</h2>
+        <motion.h2 variants={titleAnimation}>Our work makes</motion.h2>
       </Hide>
       <Hide>
-        <h2>your<span> dreams </span>come</h2>
+        <motion.h2 variants={titleAnimation}>your<span> dreams </span>come</motion.h2>
       </Hide>
       <Hide>
-        <h2>true.</h2>
+        <motion.h2
+        variants={titleAnimation}
+        >true.</motion.h2>
       </Hide>
-    </div>
-    <p>Contact us for any photography or videography ideas that you have. We have professionals with amazing skills</p>
-    <button>Contact Us</button>
+    </motion.div>
+    <motion.p variants={fade}>
+      Contact us for any photography or videography ideas that you have. We have professionals with amazing skills
+    </motion.p>
+    <Link to="/work">
+      <motion.button variants={fade}>Contact Us</motion.button>
+    </Link>
   </Description>
   <Image>
-    <img src={home1} alt="logo" />
+    <motion.img
+      variants={photoAnim}
+      initial="hidden"
+      animate="show"
+      src={home1} 
+      alt="logo" />
   </Image>
+  <Wave/>
 </About>
 )
 }

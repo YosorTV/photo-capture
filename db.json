@@ -2,7 +2,7 @@
   "movies": [
     {
       "id": "0",
-      "title": "The Athlete",
+      "title": "The Warrior",
       "mainImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/athlete-small.png",
       "secondaryImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/athlete2.png",
       "url": "/work/the-athlete",

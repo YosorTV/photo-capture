@@ -1,27 +1,30 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const About = styled.div`
+export const About = styled(motion.div)`
   min-height: 90vh;
   display:flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 10rem;
+  padding: 2.5rem 5rem;
   color: white;`
 
-export const Description = styled.div`
+export const Description = styled(motion.div)`
   flex:1;
   padding-right: 5rem;
+  z-index:2;
     h2{
       font-weight: lighter;
 }`
 
-export const Image = styled.figure`
+export const Image = styled(motion.figure)`
   flex: 1;
   overflow: hidden;
+  z-index: 2;
     img{
       width:100%;
       object-fit:cover;
-      height: 80vh;
+      height: 70vh;
     }`
 
 export const Hide = styled.div`

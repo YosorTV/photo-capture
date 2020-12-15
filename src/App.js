@@ -9,9 +9,10 @@ import ContactUs from './pages/ContactUs';
 import OurWork from './pages/OurWork';
 import MovieDetail from './pages/MovieDetail';
 
-import {Switch, Route} from 'react-router-dom';
-
-function App() {
+import {Switch, Route, useLocation} from 'react-router-dom';
+// Animation
+import { AnimatePresence } from 'framer-motion';
+const App = () => {
 const [movies, setMovies] = useState([]);
 
 const getMovies = async () => {
@@ -19,13 +20,16 @@ const getMovies = async () => {
     setMovies(data);
 }
 
+const location = useLocation();
 useEffect(() => getMovies(), []);
+
 
   return (
     <div className="App">
     <GlobalStyle />
       <Navigation/>
-      <Switch>
+      <AnimatePresence exitBeforeEnter>
+      <Switch location={location} key={location.pathname}>
         <Route path="/" exact>
           <AboutUs />
         </Route>
@@ -39,6 +43,7 @@ useEffect(() => getMovies(), []);
           <ContactUs />
         </Route>
       </Switch>
+      </AnimatePresence>
     </div>
   );
 }
