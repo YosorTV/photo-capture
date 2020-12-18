@@ -26,6 +26,7 @@ const MovieDetail = ({ movies }) => {
         initial="hidden" 
         animate="show" 
         exit="exit"
+        style={{background:"#e6e6e6"}}
       >
         <Headline>
           <h2>{movie.title}</h2>
@@ -49,15 +50,18 @@ const MovieDetail = ({ movies }) => {
 }
 
 const Details = styled(motion.div)`
-  color:white;
+    color:#1b1b1b;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
 `
 const Headline = styled.div`
-  min-height: 90vh;
-  padding-top: 20vh;
+  min-height: 80vh;
+  padding-top: 10vh;
   position:relative;
   h2{
     position: absolute;
-    top:10%;
+    top:1%;
     left:50%;
     transform:translate(-50%, -10%);
   }
@@ -71,7 +75,7 @@ const Headline = styled.div`
 const Awards = styled.div`
   min-height: 80vh;
   display: flex;
-  margin: 5rem 10rem;
+  margin: 2.5rem 5rem;
   align-items: center;
   justify-content: space-around;
 `
@@ -82,6 +86,8 @@ const ImageDisplay = styled.div`
     width:100%;
     height: 100vh;
     object-fit:cover;
+    position: relative;
+    top: 4px;
   }
 `
 

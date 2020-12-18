@@ -32,11 +32,12 @@ export const Work = styled(motion.div)`
     }
 `
 const Movie = styled(motion.div)`
-  padding-bottom: 2.5rem;
+  padding-bottom: 1rem;
   a{
     color:#fff;
-    text-transform: capitalize;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
     outline:none;
     cursor: pointer;
     text-decoration:none;
@@ -47,9 +48,11 @@ const Movie = styled(motion.div)`
     margin-bottom: 1.5rem;
   }
   img{
-    width: 100%;
-    height: 65vh;
+    width: 92%;
+    height: 68vh;
     object-fit:cover;
+    display:flex;
+    margin:0 auto;
   }`
 
 const Hide = styled.div`

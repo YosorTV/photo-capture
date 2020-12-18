@@ -19,13 +19,13 @@ button {
   font-weight: 400;
   font-size:1.1rem;
   padding: 1rem 2rem;
-  border:3px solid #e35023;
+  border:3px solid #881111;
   background: transparent;
   color: white;
   transition: all .5s ease;
   font-family: 'Josefin Sans', sans-serif;
   &:hover{
-    background-color: #e35023;
+    background-color: #881111;
     color: white;
   }
 }
@@ -46,8 +46,8 @@ h4{
 
 span{
   font-weight:bold;
-  color:#e35023;
-  font-family: 'Big Shoulders Inline Text', cursive;
+  color:#881111;
+  font-family: 'Playfair Display', serif;
 }
 
 a{
