@@ -4,9 +4,8 @@ import styled from 'styled-components';
 // UI 
 import ServiceUiCard from './ServiceUiCard';
 //styles
-import { About, Description, Image, Hide } from './styles';
+import { About, Description, Image } from './styles';
 import { useScroll } from './useScroll';
-import { motion } from 'framer-motion';
 // images
 import clock from '../img/clock.svg';
 import diaphragm from '../img/diaphragm.svg';

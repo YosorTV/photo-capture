@@ -47,10 +47,10 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items:center;
   padding: .5rem 5rem;
-  border-bottom: 8px solid #881111;
+  background:#fff;
   
   a{
-    color:#ffffff;
+    color:#202020;
     text-decoration:none;
     font-size: 1.4rem;
     transition: .2s ease-out;
