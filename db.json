@@ -2,61 +2,61 @@
   "movies": [
     {
       "id": "0",
-      "title": "The Warrior",
-      "mainImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/warrior-main.jpg",
-      "secondaryImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/warrior.jpg",
-      "url": "/work/the-warrior",
+      "title": "The Irishman",
+      "mainImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/irishman-main.jpg",
+      "secondaryImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/irishman-secondary.jpg",
+      "url": "/work/the-irishman",
       "awards": [{
-          "title": "Academy Awards.",
-          "description": "“Best Performance by an Actor in a Supporting Role.”"
+          "title": "Critics Choice Movie Award.",
+          "description": "“Best Acting Ensemble.”"
         },
         {
-          "title": "Screen Actors Guild Awards.",
-          "description": "“Outstanding Performance by a Male Actor in a Supporting Role.”"
+          "title": "New York Film Critics Circle Award.",
+          "description": "“Best Supporting Actor.”"
         },
         {
-          "title": "Golden Schmoes Awards.",
-          "description": "“Most Underrated Movie of the Year.”"
+          "title": "New York Film Critics Circle Award.",
+          "description": "“Best Film.”"
         }
       ]
     },
     {
       "id": "1",
-      "title": "Good Times",
-      "mainImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/goodtimes-small.png",
-      "secondaryImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/good-times2.jpg",
-      "url": "/work/good-times",
+      "title": "The Joker",
+      "mainImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/joker-main.jpg",
+      "secondaryImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/joker-secondary.jpg",
+      "url": "/work/the-joker",
       "awards": [{
-          "title": "Truly A masterpiece",
-          "description": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”"
+          "title": "Academy Award.",
+          "description": "“Best Actor in a Leading Role.”"
         },
         {
-          "title": "Fresh look on a brutal sport.",
-          "description": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”"
+          "title": "Academy Award.",
+          "description": "“Best Music (Original Score).”"
         },
         {
-          "title": "It’s okay lmao.",
-          "description": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”"
+          "title": "Critics Choice Movie Award.",
+          "description": "“Best Actor.”"
         }
       ]
     },
     {
       "id": "2",
-      "title": "The Racer",
+      "title": "Ford v Ferrari",
       "mainImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/theracer-small.png",
       "secondaryImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/the-racer2.jpg",
-      "url": "/work/the-racer",
+      "url": "/work/ford-v-ferrari",
       "awards": [{
-          "title": "Truly A masterpiece",
-          "description": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”"
+          "title": "Academy Award.",
+          "description": "“Best Film Editing.”"
         },
         {
-          "title": "Fresh look on a brutal sport.",
-          "description": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”"
+          "title": "Academy Award.",
+          "description": "“Best Sound Editing.”"
         },
         {
-          "title": "It’s okay lmao.",
-          "description": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”"
+          "title": "Satellite Award.",
+          "description": "“Best Director.”"
         }
       ]
     }

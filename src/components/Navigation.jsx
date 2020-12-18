@@ -47,15 +47,15 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items:center;
   padding: .5rem 5rem;
-  background:#fff;
+  background:#881111;
   
   a{
-    color:#202020;
+    color:#fff;
     text-decoration:none;
     font-size: 1.4rem;
     transition: .2s ease-out;
     &:hover{
-      color:#881111
+      color:#1b1b1b;
     }
   }
   ul{
@@ -70,7 +70,7 @@ const Nav = styled.nav`
     font-size: 4rem;
     font-family: 'Big Shoulders Inline Text', cursive;
     font-weight: 900;
-    color: #e35023;
+    color: #fff;
   }
 `
 
