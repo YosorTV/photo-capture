@@ -43,8 +43,8 @@
     {
       "id": "2",
       "title": "Ford v Ferrari",
-      "mainImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/racer-secondary.jpg",
-      "secondaryImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/racer-main.jpg",
+      "mainImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/racer-main.jpg",
+      "secondaryImg": "https://raw.githubusercontent.com/YosorTV/photo-capture/master/src/img/racer-secondary.jpg",
       "url": "/work/ford-v-ferrari",
       "awards": [{
           "title": "Academy Award.",
