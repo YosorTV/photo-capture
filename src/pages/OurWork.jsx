@@ -2,9 +2,7 @@ import React from 'react';
 // Components
 import MovieList, { Work } from '../components/MovieList';
 // Animations
-import { pageAnimation, slider, sliderContainer } from '../animation';
-import {motion} from 'framer-motion';
-import styled from 'styled-components';
+import { pageAnimation } from '../animation';
 
 const OurWork = ({ movies }) => {
   return (
