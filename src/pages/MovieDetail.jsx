@@ -70,6 +70,24 @@ const Headline = styled.div`
     height: 70vh;
     object-fit: cover;
   }
+  @media (max-width:1300px){
+    h2{
+      top:4%;
+      font-size:2.5rem;
+    }
+  }
+  @media (max-width:1300px){
+    h2{
+      top:4%;
+      font-size:2.5rem;
+    }
+  }
+  @media (max-width:600px){
+    h2{
+      top:4%;
+      font-size:1.8rem;
+    }
+  }
 `
 
 const Awards = styled.div`
@@ -78,6 +96,14 @@ const Awards = styled.div`
   margin: 2.5rem 5rem;
   align-items: center;
   justify-content: space-around;
+  @media (max-width:600px){
+    margin: 1rem 2rem;
+    flex-direction:column;
+    text-align:center;
+    .line{
+      width:100%;
+    }
+  }
 `
 
 const ImageDisplay = styled.div`

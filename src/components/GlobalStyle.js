@@ -7,6 +7,12 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
+html{
+  @media (max-width: 1700px){
+    font-size:80%;
+  }
+}
+
 body{
   background: #1b1b1b;
   font-family: 'Josefin Sans', sans-serif;
@@ -25,8 +31,11 @@ button {
   transition: all .5s ease;
   font-family: 'Josefin Sans', sans-serif;
   &:hover{
-    background-color: #881111;
+    background-color:#881111;
     color: white;
+  }
+  @media (max-width:1300px) {
+    padding: 1rem 12rem;
   }
 }
 
@@ -47,7 +56,7 @@ h4{
 span{
   font-weight:bold;
   color:#881111;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Big Shoulders Inline Text', cursive;
 }
 
 a{

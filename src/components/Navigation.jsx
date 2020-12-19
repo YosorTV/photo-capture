@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavList from './NavList';
-
+import {motion} from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const navigationList = [
@@ -41,14 +41,16 @@ const Navigation = () => {
 }
 
 const Nav = styled.nav`
-  min-height: 5vh;
+  min-height: 4vh;
   display:flex;
   margin: auto;
   justify-content: space-between;
   align-items:center;
   padding: .5rem 5rem;
   background:#881111;
-  
+  position: sticky;
+  top:0;
+  z-index:100;
   a{
     color:#fff;
     text-decoration:none;
@@ -71,6 +73,34 @@ const Nav = styled.nav`
     font-family: 'Big Shoulders Inline Text', cursive;
     font-weight: 900;
     color: #fff;
+  }
+  @media (max-width: 1300px) {
+    flex-direction:column;
+    padding: 1rem 1rem;
+    #logo{
+      display:inline-block;
+      margin: 1rem;
+    }
+      ul{
+        padding:2rem;
+        justify-content:space-around;
+        width:100%;
+        li{
+          padding:0;
+        }
+      }
+  }
+`;
+
+export const Line = styled(motion.div)`
+  height:.3rem;
+  background:#fff;
+  width:0%;
+  position:absolute;
+  bottom:-80%;
+  left:55%;
+  @media (max-width: 1300px) {
+    left:0%;
   }
 `
 

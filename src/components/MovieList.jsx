@@ -28,7 +28,10 @@ export const Work = styled(motion.div)`
   overflow:hidden;
   padding: 2.5rem 5rem;
     h2{
-      padding: 1rem 0rem;
+      padding: 2rem 0rem;
+    }
+    @media (max-width:1300px) {
+      padding:1rem 2rem;
     }
 `
 const Movie = styled(motion.div)`
@@ -53,6 +56,12 @@ const Movie = styled(motion.div)`
     object-fit:cover;
     display:flex;
     margin:0 auto;
+  }
+  @media (max-width:1300px) {
+    h2{
+      display:inline-block;
+      font-size:3rem;
+    }
   }`
 
 const Hide = styled.div`

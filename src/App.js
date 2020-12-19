@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import movieService from './movieService';
 
 import GlobalStyle from './components/GlobalStyle';
+import ScrollTop from './components/ScrollTop';
 
 import Navigation from './components/Navigation';
 import AboutUs from './pages/AboutUs';
@@ -23,10 +24,10 @@ const getMovies = async () => {
 const location = useLocation();
 useEffect(() => getMovies(), []);
 
-
   return (
     <div className="App">
     <GlobalStyle />
+    <ScrollTop />
       <Navigation/>
       <AnimatePresence exitBeforeEnter>
       <Switch location={location} key={location.pathname}>

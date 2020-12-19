@@ -12,7 +12,7 @@ const CoutactUs = () => {
       initial="hidden" 
       animate="show" 
       exit="exit"
-      style={{background:"#fff"}}
+      style={{background:"#e6e6e6"}}
     >
       <Title>
         <Hide>
@@ -35,7 +35,7 @@ const CoutactUs = () => {
         <Hide>
         <Social variants={titleAnimation}>
           <Circle />
-          <h2>Social Media</h2>
+          <h2>Social media.</h2>
         </Social>
         </Hide>
       </div>
@@ -65,6 +65,16 @@ const Social = styled(motion.div)`
     h2{
       margin: 2rem;
     }
+  @media (max-width:1300px) {
+    h2{
+      font-size:3rem;
+    }
+  }
+  @media (max-width:600px) {
+    h2{
+      font-size:1.8rem;
+    }
+  }
 `
 
 export default CoutactUs

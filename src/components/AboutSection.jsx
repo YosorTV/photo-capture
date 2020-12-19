@@ -28,7 +28,7 @@ return (
     <motion.p variants={fade}>
       Contact us for any photography or videography ideas that you have. We have professionals with amazing skills
     </motion.p>
-    <Link to="/work">
+    <Link to="/contact">
       <motion.button variants={fade}>Contact Us</motion.button>
     </Link>
   </Description>

@@ -17,17 +17,17 @@ const FaqSection = () => {
     },
     {
       id:Math.random(),
-      title: 'Daily Schedule.',
+      title: 'Daily Schedule ?',
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, laboriosam."
     },
     {
       id:Math.random(),
-      title: 'Different Payments Method.',
+      title: 'Different Payments Method ?',
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, laboriosam."
     },
     {
       id:Math.random(),
-      title: 'What Products do you offer.',
+      title: 'What Products do you offer ?',
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, laboriosam."
     }
   ]
@@ -52,6 +52,10 @@ const FaqSection = () => {
 
 const Faq = styled(About)`
   display:block;
+  @media (max-width:1300px){
+    position:relative;
+    top:14rem;
+  }
     span {
       display:block;
     }
